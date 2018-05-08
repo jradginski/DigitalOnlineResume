@@ -68,7 +68,7 @@
                     </ul>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">@string.Format("{0}/{1}", m.StartDate.Month, m.StartDate.Year)  - @((m.IsCurrentlyEmployed) ? "Current" : string.Format("{0}/{1}", m.EndDate.Month, m.EndDate.Year))</span>
+                    <span class="text-primary">@m.StartDate.ToString("MM/yyyy") - @m.EndDate.ToString("MM/yyyy")</span>
                 </div>
             </div>
         }
